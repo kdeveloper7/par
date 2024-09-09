@@ -1,0 +1,1395 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../../unidad1/unidad1/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Unidad 0. - Conceptos previos - Planificación y Administracion de Redes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidad-0-conceptos-previos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Planificación y Administracion de Redes" class="md-header__button md-logo" aria-label="Planificación y Administracion de Redes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Planificación y Administracion de Redes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidad 0. - Conceptos previos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="#61DAFB" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="#61DAFB" data-md-color-accent="indigo"  aria-label="Switch to automatic mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to automatic mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Planificación y Administracion de Redes" class="md-nav__button md-logo" aria-label="Planificación y Administracion de Redes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Planificación y Administracion de Redes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unidad 0. - Conceptos previos
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 0. - Conceptos previos
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapa-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapa conceptual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapa conceptual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glosario
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#01-sistemas-de-numeracion-binario-octal-decimal-y-hexadecimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.1. Sistemas de numeración: binario, octal, decimal y hexadecimal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuadro-02-equivalencias-numericas-entre-sistemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.2 - Equivalencias numéricas entre sistemas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuadro-03-valores-decimales-de-la-posicion-de-cada-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.3 - Valores decimales de la posición de cada bit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-canales-de-transmision-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.2. Canales de transmisión de datos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.2. Canales de transmisión de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#021-transmision-de-datos-analogica-y-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.2.1. Transmisión de datos analógica y digital
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#022-caracteristicas-de-los-canales-de-transmision" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.2.2. Características de los canales de transmisión
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-direccionamiento-fisico-y-logico-de-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3. Direccionamiento físico y lógico de una red
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.3. Direccionamiento físico y lógico de una red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuadro-04-niveles-de-la-arquitectura-tcpip-con-su-direccionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.4 - Niveles de la arquitectura TCP/IP con su direccionamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#031-direccionamiento-fisico-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3.1. Direccionamiento físico (MAC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#032-direccionamiento-logico-ipv4" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3.2. Direccionamiento lógico (IPv4)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuadro-05-rangos-de-direcciones-ipv4-publicas-y-privadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.5 - Rangos de direcciones IPv4 públicas y privadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuadro-06-partes-funcionales-de-una-direccion-ipv4-parte-de-red-y-parte-de-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.6 - Partes funcionales de una dirección IPv4: parte de red y parte de host
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#033-direccionamiento-logico-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3.3. Direccionamiento lógico (IPv6)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-de-las-direcciones-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumen de las Direcciones IPv6
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad1/unidad1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 1. - Caracterización de redes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/unidad3.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 2. - Elementos para la Interconexión de Redes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapa-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapa conceptual
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapa conceptual">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glosario
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#01-sistemas-de-numeracion-binario-octal-decimal-y-hexadecimal" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.1. Sistemas de numeración: binario, octal, decimal y hexadecimal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuadro-02-equivalencias-numericas-entre-sistemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.2 - Equivalencias numéricas entre sistemas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuadro-03-valores-decimales-de-la-posicion-de-cada-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.3 - Valores decimales de la posición de cada bit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#02-canales-de-transmision-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.2. Canales de transmisión de datos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.2. Canales de transmisión de datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#021-transmision-de-datos-analogica-y-digital" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.2.1. Transmisión de datos analógica y digital
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#022-caracteristicas-de-los-canales-de-transmision" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.2.2. Características de los canales de transmisión
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#03-direccionamiento-fisico-y-logico-de-una-red" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3. Direccionamiento físico y lógico de una red
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="0.3. Direccionamiento físico y lógico de una red">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuadro-04-niveles-de-la-arquitectura-tcpip-con-su-direccionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.4 - Niveles de la arquitectura TCP/IP con su direccionamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#031-direccionamiento-fisico-mac" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3.1. Direccionamiento físico (MAC)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#032-direccionamiento-logico-ipv4" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3.2. Direccionamiento lógico (IPv4)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuadro-05-rangos-de-direcciones-ipv4-publicas-y-privadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.5 - Rangos de direcciones IPv4 públicas y privadas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cuadro-06-partes-funcionales-de-una-direccion-ipv4-parte-de-red-y-parte-de-host" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuadro 0.6 - Partes funcionales de una dirección IPv4: parte de red y parte de host
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#033-direccionamiento-logico-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      0.3.3. Direccionamiento lógico (IPv6)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resumen-de-las-direcciones-ipv6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resumen de las Direcciones IPv6
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unidad-0-conceptos-previos"><strong>Unidad 0: Conceptos previos</strong></h1>
+<h2 id="objetivos"><strong>Objetivos</strong></h2>
+<ul>
+<li>Aprender a operar con los diferentes sistemas de numeración.</li>
+<li>Clasificar y caracterizar los canales de transmisión.</li>
+<li>Entender los distintos tipos de direccionamiento utilizados en una red.</li>
+<li>Configurar y gestionar los parámetros TCP/IP en los dispositivos de una red.</li>
+<li>Aplicar la división de subredes a partir de una dirección de red.</li>
+<li>Instalar y manejar una herramienta de simulación  de redes de ámbito global.</li>
+</ul>
+<h2 id="mapa-conceptual"><strong>Mapa conceptual</strong></h2>
+<p><img src="../images/mapa-conceptual.png"></p>
+<h3 id="glosario">Glosario</h3>
+<div class="admonition info">
+<p class="admonition-title">Glosario de términos</p>
+<p><strong>APIPA</strong>: Del inglés, <em>Automatic Private Internet Protocol Addressing</em>, siglas que hacen alusión a direccionamiento privado automático del protocolo de Internet. Protocolo utilizado para la autoconfiguración de dispositivos.</p>
+<p><strong>CNA</strong>: Del inglés, <em>Cisco Networking Academy</em>, programa educativo sin ánimo de lucro cuyo objetivo es contribuir a la preparación de estudiantes en el diseño, configuración y mantenimiento de redes, a través de uno de los modelos online más avanzados.</p>
+<p><strong>DHCP</strong>: Siglas en inglés relativas al protocolo de configuración dinámica de <em>host</em>. Protocolo que se instala en el servidor, utilizado para asignar los parámetros TCP/IP a los dispositivos clientes de red conectados.</p>
+<p><strong>DNS</strong>: Hace referencia al servicio o sistema de nombres de dominio (<em>Domain Name System</em>) y es utilizado para asociar las direcciones IP con sus correspondientes nombres de dominio.</p>
+<p><strong>Hexteto</strong>: Término utilizado para referirse al conjunto de 16 bits o bien al conjunto de cuatro caracteres hexadecimales consecutivos.</p>
+<p><strong>ISP</strong>: Del inglés, <em>Internet Service Provider</em>. Término utilizado para identificar a las compañías que proporcionan acceso a Internet.</p>
+<p><strong>Nibble</strong>: Término utilizado para referirse al conjunto de cuatro dígitos binarios.</p>
+<p><strong>Octeto</strong>: Término utilizado para referirse al conjunto de 8 bits. También es denominado <em>Byte</em>.</p>
+<p><strong>Subnetting</strong>: Término que hace referencia a la subdivisión de una red en varias subredes. Siglas del inglés <em>Transfer Control Protocol/Internet Protocol</em>, que hacen mención a la arquitectura de red del mismo nombre.</p>
+</div>
+<h2 id="01-sistemas-de-numeracion-binario-octal-decimal-y-hexadecimal"><strong>0.1. Sistemas de numeración: binario, octal, decimal y hexadecimal</strong></h2>
+<p>En el contexto tecnológico de la informática y las telecomunicaciones, al igual que en tantos otros, se hace evidente la necesidad de utilizar sistemas de representación. Los ordenadores y las redes de telecomunicaciones fundamentan dicha representación en cuatro sistemas: binario, octal, decimal y hexadecimal. Todos ellos disponen de su correspondiente expresión polinómica para representar cualquier magnitud en su equivalente decimal, tal y como se muestra en el cuadro siguiente:</p>
+<p><strong>Cuadro 0.1</strong> </p>
+<table>
+<thead>
+<tr>
+<th><strong>Sistema</strong></th>
+<th><strong>Expresiones polinómicas</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Binario</strong></td>
+<td>N₁₀ = aₙ . 2ⁿ + aₙ₋₁ . 2ⁿ⁻¹ + ... + a₁ . 2¹ + a₀ . 2⁰ + ...</td>
+</tr>
+<tr>
+<td><strong>Octal</strong></td>
+<td>N₁₀ = aₙ . 8ⁿ + aₙ₋₁ . 8ⁿ⁻¹ + ... + a₁ . 8¹ + a₀ . 8⁰ + ...</td>
+</tr>
+<tr>
+<td><strong>Decimal</strong></td>
+<td>N₁₀ = aₙ . 10ⁿ + aₙ₋₁ . 10ⁿ⁻¹ + ... + a₁ . 10¹ + a₀ . 10⁰ + ...</td>
+</tr>
+<tr>
+<td><strong>Hexadecimal</strong></td>
+<td>N₁₀ = aₙ . 16ⁿ + aₙ₋₁ . 16ⁿ⁻¹ + ... + a₁ . 16¹ + a₀ . 16⁰ + ...</td>
+</tr>
+</tbody>
+</table>
+<p>Así, podemos representar cualquier número en base binaria, octal, decimal o hexadecimal en su forma polinómica exponencial. </p>
+<p>Por ejemplo:</p>
+<ul>
+<li>1101₂ = 1 . 2³ + 1 . 2² + 0 . 2¹ + 1 . 2⁰ </li>
+<li>4076₈ = 4 . 8³ + 0 . 8² + 7 . 8¹ + 6 . 8⁰ </li>
+<li>9143₁₀ = 9 . 10³ + 1 . 10² + 4 . 10¹ + 3 . 10⁰ </li>
+<li>127FA₁₆ = 1 . 16³ + 2 . 16² + 7 . 16¹ + 15 . 16⁰ </li>
+</ul>
+<p>Cualquier número puede ser representado en cada uno de los sistemas, utilizando para ello los correspondientes símbolos de representación propios (por ejemplo, para el sistema binario se utilizan dos símbolos, el 0 y el 1, mientras que para el sistema octal se utilizan los símbolos 0, 1, 2, 3, 4, 5, 6 y 7).</p>
+<h2 id="cuadro-02-equivalencias-numericas-entre-sistemas"><strong>Cuadro 0.2 - Equivalencias numéricas entre sistemas</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Hexadecimal</strong></th>
+<th><strong>Decimal</strong></th>
+<th><strong>Octal</strong></th>
+<th><strong>Binario</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0000</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0001</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>0010</td>
+</tr>
+<tr>
+<td>3</td>
+<td>3</td>
+<td>3</td>
+<td>0011</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4</td>
+<td>4</td>
+<td>0100</td>
+</tr>
+<tr>
+<td>5</td>
+<td>5</td>
+<td>5</td>
+<td>0101</td>
+</tr>
+<tr>
+<td>6</td>
+<td>6</td>
+<td>6</td>
+<td>0110</td>
+</tr>
+<tr>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>0111</td>
+</tr>
+<tr>
+<td>8</td>
+<td>8</td>
+<td>10</td>
+<td>1000</td>
+</tr>
+<tr>
+<td>9</td>
+<td>9</td>
+<td>11</td>
+<td>1001</td>
+</tr>
+<tr>
+<td>A</td>
+<td>10</td>
+<td>12</td>
+<td>1010</td>
+</tr>
+<tr>
+<td>B</td>
+<td>11</td>
+<td>13</td>
+<td>1011</td>
+</tr>
+<tr>
+<td>C</td>
+<td>12</td>
+<td>14</td>
+<td>1100</td>
+</tr>
+<tr>
+<td>D</td>
+<td>13</td>
+<td>15</td>
+<td>1101</td>
+</tr>
+<tr>
+<td>E</td>
+<td>14</td>
+<td>16</td>
+<td>1110</td>
+</tr>
+<tr>
+<td>F</td>
+<td>15</td>
+<td>17</td>
+<td>1111</td>
+</tr>
+</tbody>
+</table>
+<p>Es muy importante saber operar y transformar números entre los diferentes sistemas. Para ello, resulta muy útil manejar con soltura la equivalencia mostrada en el cuadro 1.3, que representa el valor decimal de cada uno de los bits de un octeto, según su peso.</p>
+<h2 id="cuadro-03-valores-decimales-de-la-posicion-de-cada-bit"><strong>Cuadro 0.3 - Valores decimales de la posición de cada bit</strong></h2>
+<table>
+<thead>
+<tr>
+<th>2⁷</th>
+<th>2⁶</th>
+<th>2⁵</th>
+<th>2⁴</th>
+<th>2³</th>
+<th>2²</th>
+<th>2¹</th>
+<th>2⁰</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>128</td>
+<td>64</td>
+<td>32</td>
+<td>16</td>
+<td>8</td>
+<td>4</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Por ejemplo:</p>
+<p><img src="../images/conv1.png"></p>
+<p><img src="../images/conversion-d-b.png"></p>
+<p>El número 10101001₂ (en base 2) equivale al número 251₈ (en base octal):</p>
+<ul>
+<li>10101001₂ → 251 (se agrupan de 3 en 3 dígitos de derecha a izquierda)</li>
+</ul>
+<p>El número 10101001₂ (en base 2) equivale al número A9₁₆ (en base hexadecimal):</p>
+<ul>
+<li>10101001₂ → A9 (se agrupan de 4 en 4 dígitos de derecha a izquierda)</li>
+</ul>
+<p>El número 512₈ (en base 8) equivale al número 14A₁₆ (en base hexadecimal):</p>
+<ul>
+<li>512₈ → 101001010₂ → 14A₁₆</li>
+</ul>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Actividad propuesta 0.1</p>
+<p><strong>Completa la siguiente tabla con los valores adecuados</strong>:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Binario</strong></th>
+<th><strong>Octal</strong></th>
+<th><strong>Decimal</strong></th>
+<th><strong>Hexadecimal</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11011001</td>
+<td></td>
+<td>267</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>267</td>
+<td>129</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>FC</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Toma nota</p>
+<p>Para transformar los números del formato octal al hexadecimal o viceversa se debe pasar previamente al formato decimal o binario.</p>
+</div>
+<h2 id="02-canales-de-transmision-de-datos"><strong>0.2. Canales de transmisión de datos</strong></h2>
+<p>Un canal de transmisión de datos es el camino a través del cual viaja la información entre un emisor y un receptor. Estos datos pueden propagarse sobre medios guiados (por ejemplo, los cables de par trenzado) o sobre medios no guiados (por ejemplo, las ondas de radio).</p>
+<h3 id="021-transmision-de-datos-analogica-y-digital"><strong>0.2.1. Transmisión de datos analógica y digital</strong></h3>
+<p>La transmisión de información entre dos o más puntos puede realizarse utilizando infinidad de tecnologías, pero todas ellas se fundamentan en la transmisión de dos tipos concretos de señales: analógicas o digitales. Estas señales serán las que transporten los datos propiamente dichos, es decir, los datos que se envían son siempre información digital que será transmitida a través de un medio, utilizando para ello, o bien una señal analógica, o bien una señal digital.</p>
+<div style="border: 1px solid #ddd; padding: 10px; border-radius: 8px; background-color: #f9f9f9; text-align: center;">
+
+  <div style="display: flex; justify-content: space-around; align-items: center;">
+
+    <div>
+      <img src="../images/analogica.png" alt="Señal analógica" style="width: 300px;">
+    </div>
+
+    <div>
+      <img src="../images/digital.png" alt="Señal digital" style="width: 300px;">
+    </div>
+
+  </div>
+
+  <div style="margin-top: 10px; font-weight: bold; font-size: 1.2em;">
+    Figura 0.1 - Gráficas de señal analógica y digital.
+  </div>
+
+</div>
+
+<p><strong>Por ejemplo:</strong></p>
+<p>La red telefónica básica (RTB) o red telefónica conmutada (RTC) es un claro ejemplo de sistema analógico, el cual ha sido ampliamente utilizado, y todavía lo sigue siendo, como medio de transmisión de voz.</p>
+<p>Las actuales infraestructuras de redes de fibra óptica que dan soporte para el acceso a Internet, como por ejemplo, Movistar, Jazztel, etc., representan sistemas digitales, y en algunos de los casos, lo son totalmente de extremo a extremo (FTTH – <em>Fiber To The Home</em>).</p>
+<h3 id="022-caracteristicas-de-los-canales-de-transmision"><strong>0.2.2. Características de los canales de transmisión</strong></h3>
+<p>Existen numerosas clasificaciones o taxonomías de los canales o medios de transmisión en función de las características bajo las que se realice dicho estudio. Algunos de los parámetros o características más importantes son:</p>
+<ol>
+<li>
+<p><strong>Velocidad de transmisión</strong>. Se mide en bits por segundo (bps) o múltiplos de este (Kbps, Mbps, etc.) y permite cuantificar la velocidad a la que pueden transmitirse los datos a través de un canal. Por ejemplo, una red FastEthernet tiene una velocidad de transmisión máxima de 100 Mbps.</p>
+</li>
+<li>
+<p><strong>Ancho de banda</strong>. También conocido como banda de paso, suele expresarse en hercios (Hz) y define el conjunto de frecuencias que son capaces de transmitirse sobre un canal. Por ejemplo, habitualmente, las bandas de frecuencia más utilizadas en las redes wifi son la de 2,4 GHz y la de 5 GHz.</p>
+</li>
+<li>
+<p><strong>Ruido</strong>. Es el conjunto de fenómenos o interferencias que pueden afectar al canal de transmisión. Puede ser causado por factores externos al canal o ser inherentes al mismo. Por ejemplo, la diafonía que se produce en un canal por la proximidad de otro canal.</p>
+</li>
+<li>
+<p><strong>Distancia máxima</strong>. Suele medirse en metros (m) o kilómetros (km) y hace referencia a la distancia máxima que es capaz de alcanzar la señal transmitida sin perder su capacidad de ser interpretada correctamente por el receptor. Por ejemplo, en una red Ethernet la distancia máxima del cable de par trenzado que puede utilizarse entre dos nodos es de 100 m.</p>
+</li>
+</ol>
+<hr />
+<h2 id="03-direccionamiento-fisico-y-logico-de-una-red"><strong>0.3. Direccionamiento físico y lógico de una red</strong></h2>
+<p>De la misma forma que es utilizado el número de bastidor de un automóvil para poder identificarlo y diferenciarlo de todos los demás, es necesario utilizar un mecanismo de identificación, para poder identificar de forma única los diferentes dispositivos dentro de una red informática. Este mecanismo recibe el nombre de <strong>direccionamiento</strong>.</p>
+<p>De forma general, podemos diferenciar dos tipos de direcciones en el entorno de una red de ordenadores: las direcciones físicas y las direcciones lógicas. Para una mejor comprensión de estos conceptos conviene basarse en la arquitectura de red TCP/IP, mostrada en el cuadro <strong>0.4</strong>, la más ampliamente utilizada en las redes a nivel mundial.</p>
+<hr />
+<h3 id="cuadro-04-niveles-de-la-arquitectura-tcpip-con-su-direccionamiento"><strong>Cuadro 0.4 - Niveles de la arquitectura TCP/IP con su direccionamiento</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Nivel o capa</strong></th>
+<th><strong>Sistema de direccionamiento</strong></th>
+<th><strong>Ejemplos</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aplicación</td>
+<td>Protocolos de aplicación</td>
+<td>http, ftp, etc.</td>
+</tr>
+<tr>
+<td>Transporte</td>
+<td>Puertos de acceso</td>
+<td>80, 21, etc.</td>
+</tr>
+<tr>
+<td>Internet</td>
+<td>Direcciones lógicas</td>
+<td>IPv4, IPv6</td>
+</tr>
+<tr>
+<td>Acceso a la red</td>
+<td>Direcciones físicas</td>
+<td>MAC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="031-direccionamiento-fisico-mac"><strong>0.3.1. Direccionamiento físico (MAC)</strong></h3>
+<p>La dirección física o <strong>MAC</strong> (<em>Media Access Control</em>) es un identificador único de 48 bits. Está compuesto por 6 grupos de 2 dígitos hexadecimales, conocidos como <em>nibbles</em>, y se representa en formato hexadecimal. Este tipo de dirección es válida únicamente en redes locales (LAN), donde se utiliza para identificar dispositivos que están conectados a la misma red. Si se quiere comunicar con un dispositivo fuera de la red local, es necesario usar un direccionamiento lógico.</p>
+<p>El formato estándar de una dirección MAC es:</p>
+<p>AA:BB:CC:DD:EE  </p>
+<p>Los primeros tres bloques (<strong>AA:BB:CC</strong>) identifican al fabricante del dispositivo, mientras que los últimos tres bloques (<strong>DD:EE:FF</strong>) contienen el número de serie único de la tarjeta de red. Esta dirección es asignada por el fabricante y no puede ser duplicada entre dispositivos. </p>
+<p>Para visualizar la dirección MAC de un dispositivo, puedes utilizar el comando en Windows: 
+<div class="language-javascript highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nx">ipconfig</span><span class="w"> </span><span class="o">/</span><span class="nx">all</span>
+</span></code></pre></div>
+o en Linux:
+<div class="language-js highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">ifconfig</span>
+</span></code></pre></div>
+Estos comandos muestran la información de la red, incluyendo la dirección física del dispositivo.</p>
+<p><img alt="Señal analógica" src="../images/mac.png" />
+<strong>Figura 0.2 Visualización en consola de dirección física o MAC.</strong></p>
+<h3 id="032-direccionamiento-logico-ipv4"><strong>0.3.2. Direccionamiento lógico (IPv4)</strong></h3>
+<p>El direccionamiento lógico es un método que asigna un identificador único a la interfaz de red o tarjeta de red de un dispositivo. Este identificador puede utilizarse tanto en redes locales como en redes globales, permitiendo que los dispositivos se comuniquen entre sí, ya sea dentro de la misma red local o fuera de ella.</p>
+<p>La dirección <strong>IPv4</strong> es una dirección lógica compuesta por 32 bits, organizados en 4 grupos de 8 bits cada uno, separados por puntos. Cada uno de estos grupos se representa en formato decimal. Esta dirección se divide en dos partes principales: una parte identifica la red, mientras que la otra parte se refiere al dispositivo específico dentro de esa red (el <em>host</em>). Más adelante en este capítulo se explicará en detalle esta división. El formato típico de una dirección IPv4 es el siguiente:</p>
+<p><strong>W.X.Y.Z (10</strong></p>
+<p>De manera similar a como se hace con las direcciones físicas, es bastante sencillo determinar cuál es la dirección lógica de la interfaz de red o <strong>NIC</strong> (<em>Network Interface Controller</em>). La figura 0.3 muestra un ejemplo.</p>
+<div style="border: 1px solid #ddd; padding: 10px; border-radius: 8px; background-color: #f9f9f9; text-align: center;">
+
+  <div style="display: flex; justify-content: space-around; align-items: center;">
+
+    <div>
+      <img src="../images/ipv4.png" alt="Señal analógica" ;">
+    </div>
+
+  </div>
+
+  <div style="margin-top: 10px; font-weight: bold; font-size: 1.2em;">
+    Figura 0.3 - Visualización dirección lógica IPv4.
+  </div>
+
+</div>
+
+<p>En cuanto a las partes funcionales que conforman una dirección <strong>IPv4</strong> (recordemos que tiene dos partes: la parte de red y la parte del <em>host</em>), es crucial señalar que su principal función es identificar la red o subred a la que pertenece un dispositivo en particular.</p>
+<p>El direccionamiento <strong>IPv4</strong> se organiza en diferentes clases, lo que permite establecer rangos de direcciones específicas. Estas clases facilitan el diseño y análisis de redes de distinta magnitud. Así, el tipo de clase que se utilice dependerá del tipo de red y la cantidad de dispositivos que vayan a formar parte de dicha red.</p>
+<p>Dentro de cada clase de direcciones IPv4, se establecen subrangos de direcciones, lo que da lugar a los <strong>rangos de direcciones públicas y privadas</strong>. Las direcciones públicas son asignadas a dispositivos que necesitan estar directamente accesibles en Internet, mientras que las direcciones privadas se aplican a dispositivos conectados en una red interna y que no requieren acceso directo a Internet. El cuadro 0.5 muestra los rangos de direcciones públicas y privadas en las tres primeras clases de IPv4.</p>
+<hr />
+<h3 id="cuadro-05-rangos-de-direcciones-ipv4-publicas-y-privadas"><strong>Cuadro 0.5 - Rangos de direcciones IPv4 públicas y privadas</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Clase</strong></th>
+<th><strong>Direcciones públicas</strong></th>
+<th><strong>Direcciones privadas</strong></th>
+<th><strong>Máscara de red</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>1.0.0.1 - 126.255.255.254</td>
+<td>10.0.0.1 - 10.255.255.254</td>
+<td>255.0.0.0</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>128.0.0.1 - 191.255.255.254</td>
+<td>172.16.0.1 - 172.31.255.254</td>
+<td>255.255.0.0</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>192.0.0.1 - 223.255.255.254</td>
+<td>192.168.0.1 - 192.168.255.254</td>
+<td>255.255.255.0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p>En el diseño de redes utilizando <strong>IPv4</strong>, es esencial tener en cuenta cuántos dispositivos van a formar parte de la red. Como se explicó previamente, una dirección IPv4 está formada por dos partes: una que identifica la red y otra que identifica el dispositivo dentro de esa red. Esta organización facilita la asignación de direcciones y ayuda a gestionar correctamente el tráfico de red.</p>
+<p>El concepto de <strong>máscara de red</strong> se abordará más adelante en la sección 0.5.1. El cuadro 0.6 muestra la relación entre las clases IPv4 y sus partes funcionales.</p>
+<hr />
+<h3 id="cuadro-06-partes-funcionales-de-una-direccion-ipv4-parte-de-red-y-parte-de-host"><strong>Cuadro 0.6 - Partes funcionales de una dirección IPv4: parte de red y parte de host</strong></h3>
+<table>
+<thead>
+<tr>
+<th><strong>Clase</strong></th>
+<th><strong>Parte funcional</strong></th>
+<th><strong>Número de redes</strong></th>
+<th><strong>Número de hosts</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>red.host.host.host</td>
+<td>2⁷ - 2 = 128</td>
+<td>2²⁴ - 2 = 16777214</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>red.red.host.host</td>
+<td>2¹⁴ = 16384</td>
+<td>2¹⁶ - 2 = 65534</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>red.red.red.host</td>
+<td>2²¹ = 2097152</td>
+<td>2⁸ - 2 = 254</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Recuerda</p>
+<p>Para calcular cuántos <strong>hosts</strong> pueden conectarse en una red determinada, debes tener en cuenta el número de bits disponibles para los hosts y restar dos de ese valor. Esto se debe a que la primera dirección, que solo contiene ceros, se reserva para identificar la red, y la última, compuesta de unos, se reserva para fines especiales.</p>
+</div>
+<hr />
+<p>Por ejemplo:</p>
+<p>Si tenemos la dirección IP <strong>195.214.12.0</strong> con la máscara <strong>255.255.255.0</strong>, se podrán direccionar los <strong>hosts</strong> desde <strong>195.214.12.1</strong> hasta <strong>195.214.12.254</strong>. Ten en cuenta que las direcciones que terminan en 0 identifican la red, mientras que la que termina en 255 está reservada para otras funciones.</p>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Actividad propuesta 0.2</p>
+<p>Se te proporciona la configuración de una red doméstica. Debes asignar las direcciones TCP/IP a dos equipos cliente y un servidor, dentro del rango privado <strong>192.168.1.0/24</strong>. Recuerda asignar las primeras direcciones IP disponibles a los clientes y reservar la última IP para el <strong>gateway</strong>. Usa la dirección restante para el servidor, siguiendo una asignación descendente.</p>
+<p><img alt="Diagrama de la red doméstica" src="../images/act0-2.png" /></p>
+</div>
+<p>Rellena la tabla siguiente con los parámteros TCP/IP correspondientes:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Equipo</strong></th>
+<th><strong>Dirección IPv4</strong></th>
+<th><strong>Máscara de red</strong></th>
+<th><strong>Gateway</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Router casa</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cliente 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cliente 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Servidor</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="033-direccionamiento-logico-ipv6"><strong>0.3.3. Direccionamiento lógico (IPv6)</strong></h3>
+<p>Las direcciones <strong>IPv6</strong> están formadas por 128 bits, que se agrupan en 8 bloques de 16 bits cada uno. Estos bloques suelen representarse en formato hexadecimal y están separados por dos puntos (:). Un ejemplo de una dirección IPv6 sería:</p>
+<p>8888:9999:AAAA:BBBB:CCCC:DDDD:EEEE (16</p>
+<p>Las direcciones IPv6 se clasifican en tres tipos principales:</p>
+<ol>
+<li><strong>Unicast</strong>: Se utiliza para identificar una única interfaz de red en un nodo. Cuando un paquete se envía a una dirección Unicast, solo ese nodo lo recibe.</li>
+<li><strong>Multicast</strong>: Se utiliza para enviar un paquete a un grupo de nodos. Todos los dispositivos del grupo recibirán el paquete al mismo tiempo.</li>
+<li><strong>Anycast</strong>: Similar a Multicast, pero en este caso, el paquete lo recibe el nodo más cercano al remitente, es decir, el nodo que pueda ofrecer la mejor ruta.</li>
+</ol>
+<p>Además de estos tipos, existen <strong>subtipos de direcciones IPv6</strong>, que son específicos para ciertos usos. Los subtipos más importantes pertenecen a las direcciones <strong>Unicast</strong> y son:</p>
+<ul>
+<li><strong>Global</strong>: Son las direcciones que se utilizan para la conexión a Internet, equivalentes a las direcciones públicas en IPv4.</li>
+<li><strong>Enlace Local (Link-Local)</strong>: Se usan solo dentro de una red local y no pueden ser enrutadas hacia Internet. Estas direcciones permiten la autoconfiguración de los nodos, y son equivalentes al protocolo <strong>APIPA</strong> en IPv4.</li>
+<li><strong>Sitio Local (Site-Local o Unique-Local)</strong>: Se utilizan en redes locales, aunque pueden ser enrutadas dentro de ese sitio. Sin embargo, no pueden ser enrutadas hacia Internet. Son equivalentes a las direcciones privadas utilizadas en IPv4.</li>
+</ul>
+<hr />
+<h3 id="resumen-de-las-direcciones-ipv6">Resumen de las Direcciones IPv6</h3>
+<ul>
+<li><strong>Unicast</strong>: Envía datos a un solo nodo.</li>
+<li><strong>Multicast</strong>: Envía datos a varios nodos simultáneamente.</li>
+<li><strong>Anycast</strong>: Envía datos al nodo más cercano al remitente.</li>
+</ul>
+<p>Los subtipos como <strong>Global</strong>, <strong>Link-Local</strong> y <strong>Site-Local</strong> definen cómo se manejan las direcciones IPv6 en redes locales e Internet.</p>
+<div style="border: 1px solid #ddd; padding: 10px; border-radius: 8px; background-color: #f9f9f9; text-align: center;">
+
+  <div style="display: flex; justify-content: space-around; align-items: center;">
+
+    <div>
+      <img src="../images/ipv6.png" alt="ipv6" ;">
+    </div>
+
+  </div>
+
+  <div style="margin-top: 10px; font-weight: bold; font-size: 1.2em;">
+    Figura 0.4 - Clasificación de las IPv6.
+  </div>
+
+</div>
+
+<p>Hay que tener en cuenta que en las direcciones <strong>IPv6</strong> también se utilizan prefijos y rangos concretos según el tipo y subtipo de dirección utilizada. De forma general, se establece un primer prefijo de <strong>48 bits</strong> (los tres primeros hextetos) denominado <strong>prefijo de sitio</strong>, y un segundo prefijo de <strong>16 bits</strong> (cuarto hexteto) llamado <strong>prefijo de subred</strong>, dejando los últimos 64 bits (últimos cuatro hextetos) para el identificador de la interfaz.</p>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">¡Sabías que...!</p>
+<p>Actualmente están operativos los dos protocolos de direccionamiento, <strong>IPv4</strong> e <strong>IPv6</strong>, aunque gradualmente se irá utilizando con mayor frecuencia el segundo. Además, el direccionamiento <strong>broadcast</strong> no existe en IPv6.</p>
+</div>
+<hr />
+<p>Por último, es importante saber que en la asignación automática de dirección <strong>IPv6</strong> que se utiliza para el tipo <strong>Unicast</strong>, subtipo <strong>Enlace-Local</strong>, se sigue lo especificado en el <strong>protocolo EUI-64</strong>, el cual permite calcular el identificador de interfaz (los últimos 64 bits) de la dirección IPv6, a partir de la dirección física (MAC) de la interfaz de red, realizando dos sencillas operaciones:</p>
+<ol>
+<li>Primero, se añade el hexteto <strong>FFFE</strong> justo en la parte central de la dirección MAC.</li>
+<li>Luego, se invierte el bit 7 de la dirección física (MAC), que consta de solo 48 bits.</li>
+</ol>
+<p>De esta forma, se necesitan 16 bits más (un hexteto) para completar los 64 bits necesarios del identificador de interfaz en formato IPv6.</p>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Actividad propuesta 0.3</p>
+<p>La representación de direcciones IPv6 supone una cadena excesivamente larga de caracteres hexadecimales. ¿Sabes si existe alguna forma o método de abreviación para este tipo de direcciones IP que permita escribirlas de forma más corta?</p>
+<p>En segundo lugar, se convierten los dos primeros caracteres hexadecimales, es decir, el primer octeto de la dirección física o MAC a código binario y, luego, se invierte el valor del 7° bit (empezando a contar por la izquierda).</p>
+</div>
+<p>Por ejemplo:</p>
+<p>Transformación de la dirección física <strong>00:E0:08:19:02:40</strong>₁₆ en un identificador de interfaz IPv6 utilizando el protocolo EUI-64:</p>
+<ol>
+<li><strong>Primer paso</strong>, se insertan en la parte central los caracteres hexadecimales <strong>FFFE</strong>: </li>
+</ol>
+<p>00:E0:08:FF:FE:19:02:40₁₆</p>
+<ol>
+<li><strong>Segundo paso</strong>, se convierte a binario el primer octeto de la dirección física y se invierte el valor del 7° bit (empezando por la izquierda):</li>
+</ol>
+<p>00000000₂:E0:08:FF:FE:19:02:40₁₆ </p>
+<p>s00000010₂:E0:08:FF:FE:19:02:40₁₆</p>
+<ol>
+<li>Dando como resultado final el identificador de interfaz IPv6:</li>
+</ol>
+<p>02:E0:08:FF:FE:19:02:40₁₆</p>
+<hr />
+<div class="admonition note">
+<p class="admonition-title">Actividad propuesta 0.4</p>
+<p>Se desea configurar la siguiente red local utilizando direccionamiento IPv6. Para ello, deberán utilizarse dos direcciones de tipo Unicast en cada interfaz, que serán <strong>global</strong> y <strong>link-local</strong>. La IP <strong>global</strong> de red estará en el rango <strong>2001:DB8:A:1::/64</strong> y la <strong>link-local</strong> en el rango <strong>FE80::/64</strong>.</p>
+<p>Recuerda que es costumbre en el diseño asignar las primeras IP disponibles a los equipos cliente dejando la última IP disponible para el <strong>gateway</strong>, y sucesivamente, de forma descendente, para los equipos servidores, si los hubiera.</p>
+<p><img alt="Diagrama de la red doméstica" src="../images/act0-4.png" /></p>
+</div>
+<table>
+<thead>
+<tr>
+<th><strong>Equipo</strong></th>
+<th><strong>IPv6 global/máscara</strong></th>
+<th><strong>IPv6 link-local</strong></th>
+<th><strong>Gateway global/link-local</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Router</td>
+<td>----</td>
+<td>----</td>
+<td>----</td>
+</tr>
+<tr>
+<td>Cliente 1</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cliente 2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
