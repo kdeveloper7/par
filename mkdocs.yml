@@ -4,7 +4,7 @@ nav:
   - Home: index.md
   - Unidad 0. - Conceptos previos: unidad0/unidad0.md
   - Unidad 1. - Caracterización de redes: unidad1/unidad1.md
-  - Unidad 2. - Elementos para la Interconexión de Redes: unidad3/unidad3.md
+  
 
 theme:
   name: material
