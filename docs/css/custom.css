@@ -1,0 +1,66 @@
+.custom-title {
+  color: #007BFF; /* Azul vivo */
+  font-weight: bold;
+}
+
+
+.exercise-box {
+  border: 2px solid #DBBB37;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.important-box {
+  border: 2px solid #db4537;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+.exercise-box h3 {
+  margin-top: 0;
+  color: #DBBB37;
+  display: flex;
+  align-items: center;
+}
+
+.important-box h3 {
+  margin-top: 0;
+  color: #db4537;
+  display: flex;
+  align-items: center;
+}
+
+.exercise-box h3 .fas,
+.important-box h3 .fa-solid {
+  margin-right: 10px;
+}
+
+.md-content .admonition.info {
+  background-color: #e6f2ff;
+  border: 1px solid #cce0ff;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #333;  /* Cambia el color del borde si lo prefieres */
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td {
+  text-align: center;
+}
+
