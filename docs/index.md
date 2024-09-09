@@ -69,7 +69,7 @@ En este curso, trabajaremos en diferentes unidades que te ayudarán a desarrolla
 
 ###[Unidad 0: Conceptos previos](unidad0/unidad0.md)
 ###[Unidad 1: Caracterización de Redes](unidad1/unidad1.md)
-###[Unidad 2: Elementos para la Interconexión de Redes](unidad2/unidad2.md)
+
 
 Haz clic en las secciones anteriores para comenzar a aprender más sobre redes de comunicación.
 

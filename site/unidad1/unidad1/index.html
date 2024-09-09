@@ -1,0 +1,921 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../unidad0/unidad0/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
+    
+    
+      
+        <title>Unidad 1. - Caracterización de redes - Planificación y Administracion de Redes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+      <link rel="stylesheet" href="../../css/custom.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidad-1-caracterizacion-de-redes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Planificación y Administracion de Redes" class="md-header__button md-logo" aria-label="Planificación y Administracion de Redes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Planificación y Administracion de Redes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidad 1. - Caracterización de redes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="#61DAFB" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="#61DAFB" data-md-color-accent="indigo"  aria-label="Switch to automatic mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to automatic mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Planificación y Administracion de Redes" class="md-nav__button md-logo" aria-label="Planificación y Administracion de Redes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Planificación y Administracion de Redes
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad0/unidad0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 0. - Conceptos previos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Unidad 1. - Caracterización de redes
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 1. - Caracterización de redes
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapa-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapa conceptual
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glosario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-clasificacion-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Clasificación de redes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Clasificación de redes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-redes-segun-su-topologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de redes según su topología
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-dominios-de-colision-y-dominios-de-difusion-broadcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Dominios de colisión y dominios de difusión (broadcast)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-arquitectura-de-redes-basadas-en-niveles-encapsulamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Arquitectura de redes basadas en niveles: encapsulamiento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Arquitectura de redes basadas en niveles: encapsulamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-encapsulamiento-modelo-osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de encapsulamiento (Modelo OSI):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-el-modelo-de-referencia-osiiso" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. El modelo de referencia OSI/ISO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. El modelo de referencia OSI/ISO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capas-del-modelo-osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capas del modelo OSI:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-la-arquitectura-de-red-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5. La arquitectura de red TCP/IP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-las-redes-ethernet-ieee-8023" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6. Las redes Ethernet (IEEE 802.3)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Las redes Ethernet (IEEE 802.3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#par-trenzado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Par trenzado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra óptica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-las-redes-wi-fi-ieee-80211-y-wimax-ieee-80216" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7. Las redes Wi-Fi (IEEE 802.11) y WiMAX (IEEE 802.16)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7. Las redes Wi-Fi (IEEE 802.11) y WiMAX (IEEE 802.16)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wi-fi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wi-Fi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wimax" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiMAX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unidad3/unidad3.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Unidad 2. - Elementos para la Interconexión de Redes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#objetivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Objetivos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapa-conceptual" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mapa conceptual
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#glosario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Glosario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-clasificacion-de-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1. Clasificación de redes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.1. Clasificación de redes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipos-de-redes-segun-su-topologia" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de redes según su topología
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-dominios-de-colision-y-dominios-de-difusion-broadcast" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2. Dominios de colisión y dominios de difusión (broadcast)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-arquitectura-de-redes-basadas-en-niveles-encapsulamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3. Arquitectura de redes basadas en niveles: encapsulamiento
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.3. Arquitectura de redes basadas en niveles: encapsulamiento">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ejemplo-de-encapsulamiento-modelo-osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejemplo de encapsulamiento (Modelo OSI):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-el-modelo-de-referencia-osiiso" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4. El modelo de referencia OSI/ISO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.4. El modelo de referencia OSI/ISO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#capas-del-modelo-osi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Capas del modelo OSI:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-la-arquitectura-de-red-tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5. La arquitectura de red TCP/IP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-las-redes-ethernet-ieee-8023" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.6. Las redes Ethernet (IEEE 802.3)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.6. Las redes Ethernet (IEEE 802.3)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#par-trenzado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Par trenzado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fibra-optica" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fibra óptica
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-las-redes-wi-fi-ieee-80211-y-wimax-ieee-80216" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.7. Las redes Wi-Fi (IEEE 802.11) y WiMAX (IEEE 802.16)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.7. Las redes Wi-Fi (IEEE 802.11) y WiMAX (IEEE 802.16)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wi-fi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wi-Fi
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wimax" class="md-nav__link">
+    <span class="md-ellipsis">
+      WiMAX
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="unidad-1-caracterizacion-de-redes"><strong>Unidad 1: Caracterización de Redes</strong></h1>
+<h2 id="objetivos"><strong>Objetivos</strong></h2>
+<ul>
+<li>Conocer la clasificación de las redes en función de distintos criterios.</li>
+<li>Saber identificar los dominios de colisión y de difusión.</li>
+<li>Analizar las redes cableadas e inalámbricas y su evolución.</li>
+</ul>
+<h2 id="mapa-conceptual"><strong>Mapa conceptual</strong></h2>
+<p><img src="../images/mapa-conceptual.png"></p>
+<h2 id="glosario"><strong>Glosario</strong></h2>
+<div class="admonition info">
+<p class="admonition-title">Glosario de términos</p>
+<p><strong>ARPANET</strong>: Del inglés, <em>Advanced Research Projects Agency Network</em>. En español, Red de la agencia de proyectos de investigación avanzada.</p>
+<p><strong>Broadcast</strong>: Transmisión de un paquete por parte de un nodo emisor, que tiene como destino a un conjunto de nodos receptores.</p>
+<p><strong>CSMA/CD</strong>: Del inglés, <em>Carrier Sense Multiple Access with Collision Detection</em>. En español, acceso múltiple con detección de portadora y detección de colisiones, es el protocolo utilizado en las redes Ethernet.</p>
+<p><strong>DoD (de EE.UU.)</strong>: Departamento de Defensa de los Estados Unidos.</p>
+<p><strong>EIA/TIA</strong>: Del inglés, <em>Electronic Industries Alliance/Telecommunications Industry Association</em>, son los organismos de normalización que desarrollaron el estándar para cables de par trenzado utilizado en las redes Ethernet.</p>
+<p><strong>Estándar de facto</strong>: Aquel que se ha convertido en estándar por su uso masivo, sin que haya pasado por ningún proceso de normalización.</p>
+<p><strong>Estándar de iure</strong>: Aquel que ha sido creado por algún organismo de estandarización reconocido y legitimado para ello.</p>
+<p><strong>IEEE</strong>: Del inglés, <em>Institute of Electrical and Electronics Engineers</em>. En español, Instituto de ingenieros eléctricos y electrónicos, es un organismo de estandarización internacional sin ánimo de lucro.</p>
+<p><strong>ISO</strong>: Del inglés, <em>International Organization for Standardization</em>. Es una de las organizaciones más activas a escala mundial en la emisión de estándares de normalización.</p>
+<p><strong>ISP</strong>: Del inglés, <em>Internet Service Provider</em>. En español, proveedor de servicios de Internet. Es la empresa que ofrece servicios de Internet a los clientes.</p>
+<p><strong>NAP</strong>: Del inglés, <em>Network Access Point</em>. En español, puntos de acceso a la red. Interconecta a los ISP.</p>
+<p><strong>Token</strong>: Testigo <em>software</em> que habilita a su poseedor para realizar una operación concreta (utilizado en el protocolo <em>Token-Ring</em>).</p>
+</div>
+<h2 id="11-clasificacion-de-redes"><strong>1.1. Clasificación de redes</strong></h2>
+<p>Desde la aparición, en 1969, de la red ARPANET, que supuso el punto de partida de lo que actualmente conocemos como <strong>red de redes</strong> (Internet), numerosas redes han ido surgiendo y uniéndose a esta. Este proceso ha dado lugar a una estructura compleja, conectando a miles de millones de dispositivos a través de redes más pequeñas, como <strong>redes LAN (Local Area Network)</strong> y <strong>redes WAN (Wide Area Network)</strong>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TzJGUzEKo_s" title="Breve Historia de ARPANET" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<p><a href="https://www.youtube.com/watch?v=TzJGUzEKo_s">Breve Historia de ARPANET</a></p>
+<div class="admonition info">
+<p class="admonition-title">Recurso web</p>
+<p><div style="display: flex; justify-content: space-between; align-items: center;">
+    <div style="flex: 1; padding-right: 20px;">
+        En el enlace se muestran todos los cables que permiten el intercambio de información entre continentes. 
+        En el portal <a href="https://www.submarinecablemap.com">Submarine Cable Map</a>, accesible a partir del QR adjunto, 
+        puedes acceder al mapamundi interactivo.
+    </div>
+    <div style="flex: 1; text-align: center;">
+        <img src="../images/qr-cables-red.png" width="150px" style="border: 2px solid #61DAFB; border-radius: 10px; padding: 10px;">
+    </div>
+</div></p>
+</div>
+<h3 id="tipos-de-redes-segun-su-topologia"><strong>Tipos de redes según su topología</strong></h3>
+<p>Las redes pueden clasificarse según su topología física o lógica:</p>
+<ol>
+<li><strong>Redes en estrella</strong>: Todos los dispositivos están conectados a un nodo central.</li>
+<li><strong>Redes en anillo</strong>: Los dispositivos forman un círculo cerrado, donde los datos viajan en una única dirección.</li>
+<li><strong>Redes en malla</strong>: Cada nodo se conecta a múltiples nodos para garantizar redundancia.</li>
+</ol>
+<hr />
+<h2 id="12-dominios-de-colision-y-dominios-de-difusion-broadcast"><strong>1.2. Dominios de colisión y dominios de difusión (broadcast)</strong></h2>
+<p>En redes <strong>Ethernet</strong>, un <strong>dominio de colisión</strong> es una parte de la red donde dos dispositivos pueden transmitir datos al mismo tiempo, provocando una colisión. Para reducir estos problemas, se utilizan dispositivos como <strong>switches</strong> que dividen los dominios de colisión.</p>
+<p><a href="https://www.commscope.com/network-collision">Dominios de Colisión y Difusión en redes Ethernet</a>.</p>
+<p><strong>Recursos adicionales</strong>:
+- <strong>Video</strong>: <a href="https://www.youtube.com/watch?v=HDQEUqReDTg">Dominios de colisión vs. dominios de broadcast</a>.</p>
+<hr />
+<h2 id="13-arquitectura-de-redes-basadas-en-niveles-encapsulamiento"><strong>1.3. Arquitectura de redes basadas en niveles: encapsulamiento</strong></h2>
+<p>El <strong>encapsulamiento</strong> es un proceso crítico en redes, donde los datos reciben información adicional (encabezados) a medida que pasan por las capas de red. Esta técnica permite que los datos sean interpretados correctamente por los dispositivos finales.</p>
+<h3 id="ejemplo-de-encapsulamiento-modelo-osi"><strong>Ejemplo de encapsulamiento (Modelo OSI)</strong>:</h3>
+<ol>
+<li>Capa de aplicación (Datos).</li>
+<li>Capa de transporte (Segmentos).</li>
+<li>Capa de red (Paquetes).</li>
+<li>Capa de enlace (Tramas).</li>
+<li>Capa física (Bits).</li>
+</ol>
+<p><strong>Recursos adicionales</strong>:
+- <strong>Video</strong>: <a href="https://www.youtube.com/watch?v=XPE_pKzsM5Q">Entendiendo el proceso de encapsulamiento</a>.</p>
+<hr />
+<h2 id="14-el-modelo-de-referencia-osiiso"><strong>1.4. El modelo de referencia OSI/ISO</strong></h2>
+<p>El <strong>modelo OSI</strong> divide las comunicaciones en 7 capas para estandarizar los protocolos de red. Cada capa se encarga de una parte específica de la transmisión de datos.</p>
+<h3 id="capas-del-modelo-osi"><strong>Capas del modelo OSI</strong>:</h3>
+<ol>
+<li><strong>Física</strong>: Transmisión de bits por medios físicos.</li>
+<li><strong>Enlace de datos</strong>: Corrección de errores y control de flujo.</li>
+<li><strong>Red</strong>: Enrutamiento de paquetes entre redes.</li>
+<li><strong>Transporte</strong>: Gestión de conexiones y transmisión confiable.</li>
+<li><strong>Sesión</strong>: Control de sesiones de comunicación.</li>
+<li><strong>Presentación</strong>: Traducción de datos entre sistemas.</li>
+<li><strong>Aplicación</strong>: Interacción con el usuario final.</li>
+</ol>
+<p><strong>Recursos adicionales</strong>:
+- <strong>Guía completa del Modelo OSI</strong> en <a href="https://www.cisco.com/c/en/us/solutions/what-is-networking.html">Cisco Networking Academy</a>.
+- <strong>Normativa</strong>: <a href="https://www.iso.org/standard/20269.html">ISO/IEC 7498-1</a>.</p>
+<hr />
+<h2 id="15-la-arquitectura-de-red-tcpip"><strong>1.5. La arquitectura de red TCP/IP</strong></h2>
+<p>La <strong>arquitectura TCP/IP</strong> es el modelo base para la transmisión de datos en Internet. A diferencia del modelo OSI, TCP/IP tiene 4 capas: Acceso a la red, Internet, Transporte y Aplicación.</p>
+<p><strong>Recursos adicionales</strong>:
+- <strong>Video</strong>: <a href="https://www.youtube.com/watch?v=4RikG-69r7s">Entendiendo TCP/IP</a>.</p>
+<hr />
+<h2 id="16-las-redes-ethernet-ieee-8023"><strong>1.6. Las redes Ethernet (IEEE 802.3)</strong></h2>
+<p>Las redes <strong>Ethernet</strong> son las más comunes en las LAN. Utilizan cables como el <strong>par trenzado</strong> y la <strong>fibra óptica</strong> para conectar dispositivos a alta velocidad.</p>
+<h3 id="par-trenzado"><strong>Par trenzado</strong></h3>
+<p>Cables UTP y STP se utilizan en conexiones Ethernet hasta 1 Gbps.</p>
+<h3 id="fibra-optica"><strong>Fibra óptica</strong></h3>
+<p>Utilizada para conexiones a larga distancia y transmisión de datos a muy alta velocidad.</p>
+<hr />
+<h2 id="17-las-redes-wi-fi-ieee-80211-y-wimax-ieee-80216"><strong>1.7. Las redes Wi-Fi (IEEE 802.11) y WiMAX (IEEE 802.16)</strong></h2>
+<h3 id="wi-fi"><strong>Wi-Fi</strong></h3>
+<p>Basada en el estándar <strong>IEEE 802.11</strong>, Wi-Fi permite la conexión inalámbrica de dispositivos a través de un <strong>punto de acceso</strong>.</p>
+<h3 id="wimax"><strong>WiMAX</strong></h3>
+<p>Protocolo inalámbrico de larga distancia utilizado para proporcionar acceso a Internet en áreas metropolitanas.</p>
+<p><a href="https://www.networkworld.com/article/3409290/the-history-of-wi-fi-standards.html">Estándares Wi-Fi y su evolución</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+      
+    
+  </body>
+</html>
