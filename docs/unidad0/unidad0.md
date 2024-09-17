@@ -584,8 +584,8 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
 
     IP en binario:
 
-    | **Binario**                | **Parte de red**       | **Parte de subred**    | **Parte de host**         |
-    |----------------------------|------------------------|------------------------|---------------------------|
+    | **Binario**                | **Parte de subred**       | **Parte de host**      |        
+    |----------------------------|------------------------|------------------------|
     | 10111110.00011010.10001111. | **000**                | **00000**           |
     | **Parte de red**            | **Parte de subred**    | **Parte de host**      |
 
