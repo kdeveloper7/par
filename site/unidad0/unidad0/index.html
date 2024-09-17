@@ -504,9 +504,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="0.4 Configuración de parámetros TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#041-tipos-de-asignacion-de-parametros-tcpip" class="md-nav__link">
     <span class="md-ellipsis">
       0.4.1 Tipos de asignación de parámetros TCP/IP
@@ -514,13 +515,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#042-metodos-de-asignacion-de-parametros-tcpip" class="md-nav__link">
     <span class="md-ellipsis">
       0.4.2 Métodos de asignación de parámetros TCP/IP
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -552,20 +558,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#053-subnetting-y-calculo-de-subredes" class="md-nav__link">
     <span class="md-ellipsis">
       0.5.3 Subnetting y cálculo de subredes
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="0.5.3 Subnetting y cálculo de subredes">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#recurso-web" class="md-nav__link">
@@ -891,9 +891,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="0.4 Configuración de parámetros TCP/IP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#041-tipos-de-asignacion-de-parametros-tcpip" class="md-nav__link">
     <span class="md-ellipsis">
       0.4.1 Tipos de asignación de parámetros TCP/IP
@@ -901,13 +902,18 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#042-metodos-de-asignacion-de-parametros-tcpip" class="md-nav__link">
     <span class="md-ellipsis">
       0.4.2 Métodos de asignación de parámetros TCP/IP
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -939,20 +945,14 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#053-subnetting-y-calculo-de-subredes" class="md-nav__link">
     <span class="md-ellipsis">
       0.5.3 Subnetting y cálculo de subredes
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="0.5.3 Subnetting y cálculo de subredes">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#recurso-web" class="md-nav__link">
@@ -1722,13 +1722,13 @@ Estos comandos muestran la información de la red, incluyendo la dirección fís
 <p>No siempre es obligatorio configurar los parámetros <strong>gateway</strong> y <strong>servidor DNS</strong>. El primero es necesario para acceder a redes externas, mientras que el segundo facilita la conexión mediante nombres de dominio, en lugar de tener que usar direcciones IP directamente.</p>
 </div>
 <hr />
-<h2 id="041-tipos-de-asignacion-de-parametros-tcpip"><strong>0.4.1 Tipos de asignación de parámetros TCP/IP</strong></h2>
+<h3 id="041-tipos-de-asignacion-de-parametros-tcpip"><strong>0.4.1 Tipos de asignación de parámetros TCP/IP</strong></h3>
 <p>Los parámetros TCP/IP pueden configurarse de manera <strong>manual</strong> o <strong>automática</strong> mediante un servidor <strong>DHCP</strong>.</p>
 <ul>
 <li><strong>Manual</strong>: En este caso, el usuario o administrador de la red debe ingresar los parámetros directamente en el dispositivo, ya sea a través de comandos en la consola o utilizando herramientas gráficas del sistema operativo.</li>
 <li><strong>Automática</strong>: En este método, un servidor <strong>DHCP</strong> asigna automáticamente los parámetros TCP/IP a los dispositivos cuando se conectan a la red. El administrador configura el servidor DHCP para que distribuya las direcciones IP y otros parámetros de manera dinámica.</li>
 </ul>
-<h2 id="042-metodos-de-asignacion-de-parametros-tcpip"><strong>0.4.2 Métodos de asignación de parámetros TCP/IP</strong></h2>
+<h3 id="042-metodos-de-asignacion-de-parametros-tcpip"><strong>0.4.2 Métodos de asignación de parámetros TCP/IP</strong></h3>
 <p>El servidor <strong>DHCP</strong> es el encargado de asignar parámetros TCP/IP a cada dispositivo conectado en la red. Existen tres métodos principales para la asignación de estos parámetros:</p>
 <ol>
 <li>
@@ -1801,7 +1801,7 @@ Estos comandos muestran la información de la red, incluyendo la dirección fís
 <p>Uno de los aspectos fundamentales en el diseño de una red es la creación de subredes, que implica dividir una red más grande en segmentos más pequeños, facilitando la administración y el uso eficiente del espacio de direcciones IP. Esta técnica es conocida como <strong>subnetting</strong>.</p>
 <p>El proceso de subnetting permite al administrador dividir una dirección IP proporcionada por el ISP en varias subredes, lo que facilita una mejor organización interna de la red corporativa.</p>
 <hr />
-<h2 id="053-subnetting-y-calculo-de-subredes"><strong>0.5.3 Subnetting y cálculo de subredes</strong></h2>
+<h3 id="053-subnetting-y-calculo-de-subredes"><strong>0.5.3 Subnetting y cálculo de subredes</strong></h3>
 <p>El <strong>subnetting</strong> es una técnica que permite optimizar el uso de las direcciones IP disponibles, dividiendo una red grande en subredes más pequeñas. De esta forma, se mejora el aprovechamiento del espacio de direcciones IP dentro de una organización, sin revelar la estructura interna de la red a Internet.</p>
 <p>El proceso de subnetting sigue los siguientes pasos:</p>
 <ol>

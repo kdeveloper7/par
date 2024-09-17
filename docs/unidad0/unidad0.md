@@ -113,9 +113,10 @@ El número 512₈ (en base 8) equivale al número 14A₁₆ (en base hexadecimal
 
     | **Binario**    | **Octal** | **Decimal** | **Hexadecimal** |
     |----------------|-----------|-------------|-----------------|
-    | 11011001       |           | 267         |                 |
-    |                | 267       | 129         |                 |
-    |                |           |             | FC              |
+    | 11011001       |           |             |                 |
+    |                | 267       |          |                 |
+    |                |           |    129         |              |
+    |                |           |                 | FC              |
 
 !!! info "Toma nota"
     Para transformar los números del formato octal al hexadecimal o viceversa se debe pasar previamente al formato decimal o binario.
