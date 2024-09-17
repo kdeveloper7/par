@@ -1,0 +1,60 @@
+/* Estilos para mejorar el contraste de admoniciones en modo oscuro y claro */
+:root {
+    --md-admonition-bg-color: #e0f7fa; /* Color de fondo en modo claro */
+    --md-admonition-title-color: #00796b; /* Color del título en modo claro */
+    --md-admonition-border-color: #00796b; /* Color del borde en modo claro */
+  }
+  
+
+  /* Estilo personalizado para mejorar el contraste del recuadro 'info' */
+
+/* Estilo en modo claro */
+.md-typeset .admonition.info {
+    background-color: #e0f7fa;  /* Color de fondo más claro */
+    border-left: 4px solid #00796b;  /* Borde verde oscuro */
+    color: #004d40;  /* Color de texto oscuro para mayor legibilidad */
+  }
+  
+  /* Estilo en modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    .md-typeset .admonition.info {
+      background-color: #263238;  /* Fondo más oscuro */
+      border-left: 4px solid #80cbc4;  /* Borde más claro en modo oscuro */
+      color: #ffffff;  /* Texto blanco para mejor contraste */
+    }
+  }
+  
+  /* Estilo para mejorar el contraste de los títulos de las tablas */
+
+/* Modo claro */
+.md-typeset table th {
+    background-color: #e0e0e0;  /* Fondo claro */
+    color: #000000;  /* Texto oscuro para mejor contraste */
+    font-weight: bold;
+  }
+  
+  /* Modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    .md-typeset table th {
+      background-color: #37474f;  /* Fondo oscuro */
+      color: #ffffff;  /* Texto blanco para mejor contraste */
+      font-weight: bold;
+    }
+  }
+  
+
+  /* Personalizar colores para las tablas de la actividad */
+.md-typeset table {
+    border: 1px solid #00796b;
+  }
+  
+  .md-typeset table th {
+    background-color: #e0f7fa;
+    color: #00796b;
+  }
+  
+  .md-typeset table td {
+    background-color: #f0f4f4;
+    color: #004d40;
+  }
+  

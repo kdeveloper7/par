@@ -408,3 +408,268 @@ s00000010₂:E0:08:FF:FE:19:02:40₁₆
  | Cliente 2   |                           |                     |                               |
 
 
+!!! question "Actividad propuesta 0.5"
+    
+    Otro elemento muy importante dentro del sistema de direccionamiento en un entorno informático es el número de puerto o puerto de acceso al servicio. Reflexiona y responde: ¿existe alguna relación entre los puertos de acceso y los servicios que puede ofrecer un equipo servidor?
+
+
+!!! check "Resolución de la Actividad propuesta 0.5"
+
+    Los **puertos** son números que identifican servicios específicos en un servidor o dispositivo de red. Un equipo servidor puede ofrecer múltiples servicios a través de diferentes puertos, lo que permite que un mismo dispositivo maneje varias conexiones simultáneas para distintos servicios.
+
+    ### Relación entre puertos y servicios:
+    
+    Los **puertos de acceso** están relacionados directamente con los **servicios** que ofrece un equipo servidor. Cada servicio utiliza un número de puerto específico en el rango del 0 al 65535. Aquí tienes algunos ejemplos comunes:
+    
+    | **Servicio**     | **Puerto TCP/UDP**     |
+    |------------------|------------------------|
+    | HTTP (Web)       | 80                     |
+    | HTTPS (Web segura)| 443                   |
+    | FTP (Transferencia de archivos) | 21       |
+    | SSH (Acceso remoto seguro) | 22           |
+    | DNS (Resolución de nombres) | 53           |
+    | SMTP (Correo electrónico) | 25             |
+    
+    ### Explicación:
+
+    1. **Puerto**:
+        - Un puerto es un número que identifica un servicio específico en el sistema operativo. Los puertos entre **0 y 1023** son bien conocidos y están asignados a servicios estándar como **HTTP (80)** o **HTTPS (443)**.
+        
+    2. **Relación con los servicios**:
+        - Cada **servicio** en un servidor escucha en un puerto específico. Por ejemplo, si un servidor está ejecutando un servicio web, este estará asociado al puerto **80** (HTTP) o al puerto **443** (HTTPS), dependiendo si el servicio es seguro o no.
+        
+    3. **Puertos de uso dinámico**:
+        - Existen puertos entre **1024 y 65535** que se utilizan para conexiones temporales o dinámicas, y suelen ser utilizados por aplicaciones cliente.
+
+## **0.4 Configuración de parámetros TCP/IP**
+
+Para que los dispositivos en una red puedan comunicarse de manera efectiva, se necesita configurar ciertos parámetros que permiten la interconexión. Estos parámetros están basados en protocolos específicos, siendo el más utilizado el conjunto de protocolos conocido como la **pila de protocolos TCP/IP**.
+
+A continuación, se detallan los parámetros básicos de configuración:
+
+1. **Dirección IP**: Identificador único asignado a cada dispositivo en la red, necesario para que se pueda establecer la comunicación. Es obligatorio configurarlo. Un ejemplo de dirección IP sería: **172.16.0.1**.
+2. **Máscara de red**: Se trata de una serie de 32 bits que define qué parte de la dirección IP corresponde a la red y qué parte identifica los dispositivos dentro de esa red. Un ejemplo de máscara de red sería: **255.255.0.0**.
+3. **Puerta de enlace o gateway**: Es el dispositivo que permite que los paquetes de datos puedan salir o entrar en una red, normalmente a través de Internet. Se asigna una dirección IP a este dispositivo, como por ejemplo: **172.16.0.254**.
+4. **Servidor DNS**: Este servicio traduce los nombres de dominio que utilizamos diariamente (como www.ejemplo.com) a direcciones IP que las máquinas pueden entender. Un servidor DNS común es: **8.8.8.8**.
+
+!!! info "Recuerda"
+    
+    No siempre es obligatorio configurar los parámetros **gateway** y **servidor DNS**. El primero es necesario para acceder a redes externas, mientras que el segundo facilita la conexión mediante nombres de dominio, en lugar de tener que usar direcciones IP directamente.
+
+---
+
+## **0.4.1 Tipos de asignación de parámetros TCP/IP**
+
+Los parámetros TCP/IP pueden configurarse de manera **manual** o **automática** mediante un servidor **DHCP**.
+
+- **Manual**: En este caso, el usuario o administrador de la red debe ingresar los parámetros directamente en el dispositivo, ya sea a través de comandos en la consola o utilizando herramientas gráficas del sistema operativo.
+- **Automática**: En este método, un servidor **DHCP** asigna automáticamente los parámetros TCP/IP a los dispositivos cuando se conectan a la red. El administrador configura el servidor DHCP para que distribuya las direcciones IP y otros parámetros de manera dinámica.
+
+
+## **0.4.2 Métodos de asignación de parámetros TCP/IP**
+
+El servidor **DHCP** es el encargado de asignar parámetros TCP/IP a cada dispositivo conectado en la red. Existen tres métodos principales para la asignación de estos parámetros:
+
+1. **Estática o manual**: Se basa en la dirección física del dispositivo cliente (MAC). El servidor DHCP asignará siempre la misma dirección IP y demás parámetros al cliente, sin importar cuántas veces se apague o encienda.
+   
+2. **Automática**: El servidor DHCP asignará una dirección IP libre de un rango predefinido, junto con otros parámetros de configuración. La dirección IP permanecerá asignada hasta que el cliente la libere (por ejemplo, al desconectarse de la red o al apagarse).
+
+3. **Dinámica**: Similar al método automático, pero con la diferencia de que el servidor DHCP asignará una dirección IP con un **periodo de concesión**. Una vez que dicho periodo finalice, el cliente deberá renovar la concesión para continuar utilizando la dirección IP.
+
+---
+
+Por ejemplo, un usuario puede configurar manualmente los parámetros TCP/IP en un dispositivo mediante las aplicaciones gráficas proporcionadas por los sistemas operativos. La **Figura 1.5** muestra cómo realizar esta configuración tanto en **Windows** como en **Linux** (Ubuntu 20.04).
+
+<div style="display: flex; justify-content: space-between;">
+  <div style="flex: 1; padding: 10px;">
+    <img src="../images/windows.png" alt="Configuración de parámetros TCP/IP en Windows" style="width: 100%;">
+    <p style="text-align: center;"><strong>Configuración de parámetros TCP/IP en Windows</strong></p>
+  </div>
+  <div style="flex: 1; padding: 10px;">
+    <img src="../images/linux.png" alt="Configuración de parámetros TCP/IP en Linux" style="width: 100%;">
+    <p style="text-align: center;"><strong>Configuración de parámetros TCP/IP en Linux</strong></p>
+  </div>
+</div>
+
+**Figura 0.5**: Configuración de parámetros TCP/IP en Windows y en Linux, respectivamente.
+
+
+## **0.5 División básica en subredes. Direccionamiento con clases en IPv4**
+
+La gestión de redes es una tarea que requiere dedicación y es llevada a cabo principalmente por los **administradores de red**. Una de sus responsabilidades más importantes es la configuración del esquema de direcciones IP para la red corporativa. Este administrador deberá gestionar el espacio de direccionamiento IP, proporcionado generalmente por un proveedor de servicios de Internet (ISP), para asegurar que todos los dispositivos de la organización tengan una dirección válida.
+
+---
+
+### **0.5.1. La máscara de red (netmask)**
+
+Junto a la dirección IP asignada a un dispositivo, encontramos la **máscara de red**, que tiene la función de separar la dirección IP en dos partes: la parte que identifica la **red** y la parte que identifica a los **hosts** dentro de esa red. La máscara de red es esencial para definir si los dispositivos en una misma red física pueden comunicarse entre ellos.
+
+La máscara de red está compuesta por 32 bits, organizados en cuatro grupos de un **byte** cada uno, separados por puntos y representados en **decimal**. Siempre consiste en una secuencia de unos (1) seguida de ceros (0), sin que puedan estar mezclados.
+
+Cada clase de dirección IPv4 tiene una máscara de red por defecto, pero los administradores de red pueden modificarla para adaptarse a la estructura de la red y dividirla en subredes. Las máscaras de red se pueden representar en dos formatos:
+- **Notación sufijo**: Por ejemplo, /24.
+- **Notación decimal**: Por ejemplo, 255.255.255.0.
+
+**Ejemplos**:
+
+| **Dirección IP**       | **Máscara de red**  | **Sufijo**    | 
+|------------------------|---------------------|---------------|
+| 80.0.0.0               | Máscara de red: /8   | 255.0.0.0     |
+| 160.52.0.0             | Máscara de red: /16  | 255.255.0.0   |
+| 195.124.10.0           | Máscara de red: /24  | 255.255.255.0 |
+| 200.77.54.128          | Máscara de red: /26  | 255.255.255.192 |
+
+---
+
+### **0.5.2. Cálculo de subredes (subnetting)**
+
+Uno de los aspectos fundamentales en el diseño de una red es la creación de subredes, que implica dividir una red más grande en segmentos más pequeños, facilitando la administración y el uso eficiente del espacio de direcciones IP. Esta técnica es conocida como **subnetting**.
+
+El proceso de subnetting permite al administrador dividir una dirección IP proporcionada por el ISP en varias subredes, lo que facilita una mejor organización interna de la red corporativa.
+
+---
+
+
+## **0.5.3 Subnetting y cálculo de subredes**
+
+El **subnetting** es una técnica que permite optimizar el uso de las direcciones IP disponibles, dividiendo una red grande en subredes más pequeñas. De esta forma, se mejora el aprovechamiento del espacio de direcciones IP dentro de una organización, sin revelar la estructura interna de la red a Internet.
+
+El proceso de subnetting sigue los siguientes pasos:
+
+1. **Separar la dirección IPv4** proporcionada por el ISP en dos partes: la parte de **red** y la parte de **host**. Para ello, debemos observar la máscara de red inicial.
+2. **Identificar el número de subredes** que se necesitan para el subnetting y la cantidad de hosts que se requerirán por subred.
+3. **Cálculo de bits**: A partir del número de subredes y hosts, calcular cuántos bits de la dirección IP son necesarios para cubrir ambos requisitos.
+4. **Diseñar una tabla de subnetting** que incluya el número de subredes, las IP de cada subred, la máscara de subred, el rango de direcciones IP disponibles en cada subred, y la dirección de **broadcast**.
+
+Una vez generada la tabla, se puede proceder a la asignación de direcciones IP a los dispositivos en cada subred.
+
+---
+
+### **Recurso web**
+
+!!! info "Recurso web"
+    
+    Para comprobar la validez de los cálculos, puedes acceder a numerosas calculadoras automáticas de **subnetting** en línea. Un ejemplo de ello es accesible a partir del siguiente [enlace](https://jodies.de/ipcalc).
+
+---
+
+!!! check "Actividad resuelta 0.1 - Diseño de red con subnetting"
+
+    **Descripción**:
+    
+    Un administrador de red ha sido contratado por una organización para diseñar la estructura de red de su edificio principal. Este edificio se dividirá en cinco zonas independientes, cada una de las cuales albergará hasta **30 dispositivos**. Para su diseño, la empresa ha contratado con el ISP la dirección IPv4 **190.26.151.0/24**.
+    
+    **Solución**:
+
+    a) **Separación de las partes funcionales de la dirección IPv4 190.26.151.0/24**:
+
+    La dirección IP se divide en la parte de **red**, la parte de **subred** y la parte de **host**. El desglose en binario se ve de la siguiente manera:
+
+    | **Binario**                |   **Parte de host**         |
+    |----------------------------|------------------------|
+    | 10111110.00011010.10001111. |  **00000000**           |
+  
+
+    b) **Identificación del número de subredes y el número de hosts**:
+
+    - **Subredes**: Se necesitan 5 subredes para las 5 zonas independientes. Esto requiere 3 bits, ya que 2³ = 8 > 5.
+    - **Hosts**: Cada subred debe alojar hasta 30 dispositivos, lo cual requiere 5 bits, ya que 2⁵ = 32 > 30.
+
+    **Cálculo de los bits necesarios**:
+
+    - **Subredes**: Para dividir la red en 5 subredes necesitamos 3 bits, ya que 2³ = 8 > 5.
+    - **Hosts**: Para alojar hasta 30 hosts por subred, necesitamos 5 bits, ya que 2⁵ = 32 > 30.
+
+    La dirección IP en binario quedaría así, con la separación clara entre los bits de red, subred y host:
+
+    IP en binario:
+
+    | **Binario**                | **Parte de red**       | **Parte de subred**    | **Parte de host**         |
+    |----------------------------|------------------------|------------------------|---------------------------|
+    | 10111110.00011010.10001111. | **000**                | **00000**           |
+    | **Parte de red**            | **Parte de subred**    | **Parte de host**      |
+
+    c) **Creación de la tabla de subnetting**:
+
+    A continuación, se presenta la tabla de subnetting que contiene las subredes con sus respectivos rangos de hosts y direcciones de **broadcast**:
+
+    | Nº | **RED/MÁSCARA**         | **RANGO HOSTS**                           | **BROADCAST**              |
+    |----|-------------------------|-------------------------------------------|----------------------------|
+    | 1  | 190.26.151.0/27          | 190.26.151.1 - 190.26.151.30              | 190.26.151.31               |
+    | 2  | 190.26.151.32/27         | 190.26.151.33 - 190.26.151.62             | 190.26.151.63               |
+    | 3  | 190.26.151.64/27         | 190.26.151.65 - 190.26.151.94             | 190.26.151.95               |
+    | 4  | 190.26.151.96/27         | 190.26.151.97 - 190.26.151.126            | 190.26.151.127              |
+    | 5  | 190.26.151.128/27        | 190.26.151.129 - 190.26.151.158           | 190.26.151.159              |
+    | 6  | 190.26.151.160/27        | 190.26.151.161 - 190.26.151.190           | 190.26.151.191              |
+    | 7  | 190.26.151.192/27        | 190.26.151.193 - 190.26.151.222           | 190.26.151.223              |
+    | 8  | 190.26.151.224/27        | 190.26.151.225 - 190.26.151.254           | 190.26.151.255              |
+
+---
+
+
+
+
+### **Actividad propuesta 0.6**
+
+!!! question "Actividad propuesta 0.6"
+
+    En el edificio de un centro educativo se ha instalado un nuevo **router** para proporcionar acceso a Internet a toda la comunidad educativa. El centro está dividido en **8 zonas** claramente diferenciadas, y cada una de ellas necesita tener acceso a Internet de manera independiente, a través del router.
+    
+    Cada una de estas zonas debe soportar hasta **100 dispositivos** conectados simultáneamente.
+    
+    **Crea el diseño de subnetting** que permita implementar esta estructura, utilizando el rango de direcciones IPv4 privadas **172.20.192.0/22**. Completa la tabla de subneteo con las subredes y sus respectivos rangos de direcciones IP.
+
+---
+
+## **0.6 Herramienta para la simulación de redes**
+
+El **software de simulación de redes** es una herramienta clave que cualquier administrador de redes debe conocer y manejar. En numerosas ocasiones, es necesario analizar y probar la estructura de la red que se va a implementar sin tener que realizar pruebas en el entorno real.
+
+Existen muchas herramientas de simulación de redes que facilitan esta labor, entre las más utilizadas se encuentran **Boson Netsim**, **GNS3**, y **Packet Tracer**. En este curso, utilizaremos **Packet Tracer**, dado que es una herramienta ampliamente disponible y fácil de usar.
+
+---
+### **0.6.1. Packet Tracer**
+
+**Packet Tracer** es un programa desarrollado por expertos en educación y **networking**, resultado de una alianza entre **Cisco Systems**, docentes, gobiernos y organizaciones internacionales. Este software permite a los estudiantes aprender los conocimientos más demandados en el ámbito de redes, ofreciendo mayores oportunidades de desarrollo profesional.
+
+El programa **Cisco Networking Academy (CNA)** ofrece un entorno completo para el estudio de las redes, permitiendo a los estudiantes registrar dispositivos y aprender sobre redes de una manera práctica y realista. El software está disponible de forma gratuita para los estudiantes, quienes pueden acceder a la plataforma, registrarse y descargar **Packet Tracer** desde su sitio oficial.
+
+---
+
+### **Recurso web**
+
+!!! info "Recurso web"
+    
+    Puedes acceder a la plataforma de **Cisco Networking Academy**  accediendo directamente a su [sitio web oficial](https://www.netacad.com).
+
+---
+
+En la siguiente figura (Figura 0.6), se muestra la interfaz gráfica de **Packet Tracer** en su versión **8.0.0.0212**.
+
+![Interfaz gráfica de Packet Tracer](../images/cisco.png)
+
+**Figura 0.6**: Interfaz gráfica de la herramienta de simulación de redes **Packet Tracer**.
+
+
+!!! summary "Resumen"
+    
+    - Los sistemas de numeración **binario, octal, decimal y hexadecimal** ofrecen al administrador de redes la capacidad de operar en numerosos contextos para la realización de su labor, que se basa fundamentalmente en la gestión de entornos de red.
+    
+    - Los **canales de transmisión de datos** son aquellos medios, guiados o no guiados, que se utilizan para el intercambio de información en un entorno telemático. Conocer sus características permitirá al administrador de red optimizar su funcionamiento.
+    
+    - La **arquitectura de red TCP/IP** y su pila de protocolos forman el conocimiento base necesario para configurar dispositivos en cualquier sistema operativo. Los parámetros TCP/IP permiten que los dispositivos conectados a la red se comuniquen correctamente entre ellos.
+    
+    - La **dirección IP** y la **máscara de red** son parámetros esenciales para configurar un dispositivo y permitir la comunicación adecuada. Para acceder fuera del entorno local o gestionar nombres de dominio, también será necesario configurar la **puerta de enlace (gateway)** y un **servidor DNS**.
+    
+    - Una de las tareas más importantes para un administrador de redes es la **creación de la estructura de red corporativa**. Esto incluye el uso de técnicas de **subnetting** para dividir la red en subredes.
+    
+    - En muchas ocasiones, resulta complicado implementar una red corporativa directamente en un entorno real. Para ello, es necesario el uso de **herramientas de simulación de redes** como **Packet Tracer**, que permiten verificar previamente el diseño y asegurarse de que cumple con las especificaciones necesarias.
+
+
+## **Ejercicios Propuestos**
+<img src="../images/propuestos.png">
+
+## **Cuestionario UT0**
+
+<img src="../images/cuestionario1.png">
+<img src="../images/cuestionario2.png">

@@ -1,10 +1,9 @@
-site_name: Planificación y Administracion de Redes
+site_name: Planificación y Administración de Redes
 
 nav:
   - Home: index.md
   - Unidad 0. - Conceptos previos: unidad0/unidad0.md
   - Unidad 1. - Caracterización de redes: unidad1/unidad1.md
-  
 
 theme:
   name: material
@@ -19,25 +18,28 @@ theme:
         icon: material/brightness-auto
         name: Switch to light mode
 
-    # Palette toggle for light mode
+    # Palette toggle for light mode (predeterminado)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: '#61DAFB'  # Cambiar el color principal a azul React
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
-    # Palette toggle for dark mode
+    # Palette toggle for dark mode (predeterminado)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: '#61DAFB'  # Cambiar el color principal a azul React
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to automatic mode
 
 extra_css:
   - "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  - "css/custom.css"
+  - css/custom.css
+  - css/extra.css  # Deja este CSS para posibles ajustes adicionales
 
 markdown_extensions:
   - admonition
