@@ -458,7 +458,7 @@ A continuación, se detallan los parámetros básicos de configuración:
 
 ---
 
-## **0.4.1 Tipos de asignación de parámetros TCP/IP**
+### **0.4.1 Tipos de asignación de parámetros TCP/IP**
 
 Los parámetros TCP/IP pueden configurarse de manera **manual** o **automática** mediante un servidor **DHCP**.
 
@@ -466,7 +466,7 @@ Los parámetros TCP/IP pueden configurarse de manera **manual** o **automática*
 - **Automática**: En este método, un servidor **DHCP** asigna automáticamente los parámetros TCP/IP a los dispositivos cuando se conectan a la red. El administrador configura el servidor DHCP para que distribuya las direcciones IP y otros parámetros de manera dinámica.
 
 
-## **0.4.2 Métodos de asignación de parámetros TCP/IP**
+### **0.4.2 Métodos de asignación de parámetros TCP/IP**
 
 El servidor **DHCP** es el encargado de asignar parámetros TCP/IP a cada dispositivo conectado en la red. Existen tres métodos principales para la asignación de estos parámetros:
 
@@ -530,7 +530,7 @@ El proceso de subnetting permite al administrador dividir una dirección IP prop
 ---
 
 
-## **0.5.3 Subnetting y cálculo de subredes**
+### **0.5.3 Subnetting y cálculo de subredes**
 
 El **subnetting** es una técnica que permite optimizar el uso de las direcciones IP disponibles, dividiendo una red grande en subredes más pequeñas. De esta forma, se mejora el aprovechamiento del espacio de direcciones IP dentro de una organización, sin revelar la estructura interna de la red a Internet.
 
