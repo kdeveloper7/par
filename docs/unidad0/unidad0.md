@@ -51,10 +51,16 @@ Así, podemos representar cualquier número en base binaria, octal, decimal o he
 
 Por ejemplo:
 
-- 1101₂ = 1 . 2³ + 1 . 2² + 0 . 2¹ + 1 . 2⁰ 
-- 4076₈ = 4 . 8³ + 0 . 8² + 7 . 8¹ + 6 . 8⁰ 
-- 9143₁₀ = 9 . 10³ + 1 . 10² + 4 . 10¹ + 3 . 10⁰ 
-- 127FA₁₆ = 1 . 16³ + 2 . 16² + 7 . 16¹ + 15 . 16⁰ 
+Así, podemos representar cualquier número en base binaria, octal, decimal o hexadecimal en su forma polinómica exponencial.
+
+Por ejemplo:
+
+- **1101,1₂** = 1 · 2³ + 1 · 2² + 0 · 2¹ + 1 · 2⁰ + 1 · 2⁻¹
+- **4076,3₈** = 4 · 8³ + 0 · 8² + 7 · 8¹ + 6 · 8⁰ + 3 · 8⁻¹
+- **9143,2₁₀** = 9 · 10³ + 1 · 10² + 4 · 10¹ + 3 · 10⁰ + 2 · 10⁻¹
+- **127F,A₁₆** = 1 · 16³ + 2 · 16² + 7 · 16¹ + 15 · 16⁰ + 10 · 16⁻¹
+
+
 
 Cualquier número puede ser representado en cada uno de los sistemas, utilizando para ello los correspondientes símbolos de representación propios (por ejemplo, para el sistema binario se utilizan dos símbolos, el 0 y el 1, mientras que para el sistema octal se utilizan los símbolos 0, 1, 2, 3, 4, 5, 6 y 7).
 
@@ -107,16 +113,17 @@ El número 512₈ (en base 8) equivale al número 14A₁₆ (en base hexadecimal
 - 512₈ → 101001010₂ → 14A₁₆
 
 ---
-
 !!! note "Actividad propuesta 0.1"
     **Completa la siguiente tabla con los valores adecuados**:
+
 
     | **Binario**    | **Octal** | **Decimal** | **Hexadecimal** |
     |----------------|-----------|-------------|-----------------|
     | 11011001       |           |             |                 |
-    |                | 267       |          |                 |
-    |                |           |    129         |              |
+    |                | 267       |             |                 |
+    |                |           |    129       |              |
     |                |           |                 | FC              |
+
 
 !!! info "Toma nota"
     Para transformar los números del formato octal al hexadecimal o viceversa se debe pasar previamente al formato decimal o binario.
@@ -150,6 +157,8 @@ La transmisión de información entre dos o más puntos puede realizarse utiliza
 </div>
 
 
+
+[Vídeo interesante sobre ordenadores analógicos](https://www.youtube.com/watch?v=qNtxODk_Lmk)
 
 **Por ejemplo:**
 
@@ -370,7 +379,6 @@ De esta forma, se necesitan 16 bits más (un hexteto) para completar los 64 bits
 !!! note "Actividad propuesta 0.3"
     La representación de direcciones IPv6 supone una cadena excesivamente larga de caracteres hexadecimales. ¿Sabes si existe alguna forma o método de abreviación para este tipo de direcciones IP que permita escribirlas de forma más corta?
 
-    En segundo lugar, se convierten los dos primeros caracteres hexadecimales, es decir, el primer octeto de la dirección física o MAC a código binario y, luego, se invierte el valor del 7° bit (empezando a contar por la izquierda).
 
 Por ejemplo:
 
