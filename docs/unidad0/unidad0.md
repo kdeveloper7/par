@@ -401,29 +401,140 @@ s00000010₂:E0:08:FF:FE:19:02:40₁₆
 02:E0:08:FF:FE:19:02:40₁₆
 
 
----
 
-!!! note "Actividad propuesta 0.4"
-    Se desea configurar la siguiente red local utilizando direccionamiento IPv6. Para ello, deberán utilizarse dos direcciones de tipo Unicast en cada interfaz, que serán **global** y **link-local**. La IP **global** de red estará en el rango **2001:DB8:A:1::/64** y la **link-local** en el rango **FE80::/64**.
-    
-    Recuerda que es costumbre en el diseño asignar las primeras IP disponibles a los equipos cliente dejando la última IP disponible para el **gateway**, y sucesivamente, de forma descendente, para los equipos servidores, si los hubiera.
-
-    ![Diagrama de la red doméstica](../images/act0-4.png)
-
- | **Equipo**  | **IPv6 global/máscara** | **IPv6 link-local** | **Gateway global/link-local** |
- |-------------|--------------------------|---------------------|-------------------------------|
- | Router      | ----                     | ----                | ----                          |
- | Cliente 1   |                           |                     |                               |
- | Cliente 2   |                           |                     |                               |
+<details>
 
 
-!!! question "Actividad propuesta 0.5"
+<summary><strong>Actividad propuesta 0.4</strong></summary>
+  <div class="note">
+      
+        Se desea configurar la siguiente red local utilizando direccionamiento IPv6. Para ello, deberán utilizarse dos direcciones de tipo <strong>Unicast</strong> en cada interfaz, que serán <strong>global</strong> y <strong>link-local</strong>. La IP <strong>global</strong> de red estará en el rango <strong>2001:DB8:A:1::/64</strong> y la <strong>link-local</strong> en el rango <strong>FE80::/64</strong>.</p>
+
+        <p>Recuerda que es costumbre en el diseño asignar las primeras IP disponibles a los equipos cliente dejando la última IP disponible para el <strong>gateway</strong>, y sucesivamente, de forma descendente, para los equipos servidores, si los hubiera.</p>
+
+        <img src="../images/act0-4.png" alt="Diagrama de la red doméstica">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Equipo</th>
+                <th>IPv6 global/máscara</th>
+                <th>IPv6 link-local</th>
+                <th>Gateway global/link-local</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Router</td>
+                <td>----</td>
+                <td>----</td>
+                <td>----</td>
+            </tr>
+            <tr>
+                <td>Cliente 1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cliente 2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</details>
+<hr>
+
+<details>
+  <summary><strong>Mostrar retroalimentación: Resolución de la Actividad propuesta 0.4</strong></summary>
+
+  <h3>Resolución de la Actividad propuesta 0.4</h3>
+
+  <p>En este ejercicio, configuraremos una red local con direccionamiento <strong>IPv6</strong>, asignando tanto direcciones <strong>globales</strong> como <strong>link-local</strong> a cada dispositivo en la red. Seguiremos el esquema solicitado, en el que las primeras IP disponibles se asignan a los clientes, la última dirección es para el <strong>gateway</strong>, y las demás, de forma descendente, se asignan a los servidores si están presentes.</p>
+
+  <h4>Asignación de direcciones IPv6 globales y link-locales</h4>
+
+  <table>
+    <thead>
+        <tr>
+            <th>Dispositivo</th>
+            <th>IPv6 Global / Máscara</th>
+            <th>IPv6 Link-Local</th>
+            <th>Gateway Global / Link-Local</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Router</td>
+            <td>2001:DB8:A:1::1/64</td>
+            <td>FE80::1/64</td>
+            <td>----</td>
+        </tr>
+        <tr>
+            <td>Cliente 1</td>
+            <td>2001:DB8:A:1::2/64</td>
+            <td>FE80::2/64</td>
+            <td>2001:DB8:A:1::1 / FE80::1</td>
+        </tr>
+        <tr>
+            <td>Cliente 2</td>
+            <td>2001:DB8:A:1::3/64</td>
+            <td>FE80::3/64</td>
+            <td>2001:DB8:A:1::1 / FE80::1</td>
+        </tr>
+        <tr>
+            <td>Servidor 1</td>
+            <td>2001:DB8:A:1::FFFE/64</td>
+            <td>FE80::FFFE/64</td>
+            <td>2001:DB8:A:1::1 / FE80::1</td>
+        </tr>
+        <tr>
+            <td>Gateway</td>
+            <td>2001:DB8:A:1::FFFF/64</td>
+            <td>FE80::FFFF/64</td>
+            <td>----</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <h4>Explicación:</h4>
+
+  <p><strong>1. Router:</strong><br>
+  Se asigna la primera dirección <strong>global</strong> y <strong>link-local</strong> al router, que actuará como el <strong>gateway</strong> de la red, conectando a los dispositivos hacia el exterior.</p>
+
+  <p><strong>2. Cliente 1 y Cliente 2:</strong><br>
+  Las primeras IP globales y link-locales disponibles después del router se asignan a los clientes. Ambos dispositivos utilizarán el <strong>gateway</strong> con la IP global <code>2001:DB8:A:1::1</code> y link-local <code>FE80::1</code> para acceder a otras redes.</p>
+
+  <p><strong>3. Servidor:</strong><br>
+  En caso de tener servidores en la red, se asigna una dirección cercana a la última dirección disponible antes del gateway. Aquí se utiliza <code>2001:DB8:A:1::FFFE</code> para el <strong>Servidor 1</strong>.</p>
+
+  <p><strong>4. Gateway:</strong><br>
+  Finalmente, la última dirección global y link-local disponibles en el rango, <code>2001:DB8:A:1::FFFF</code> y <code>FE80::FFFF</code>, son asignadas al <strong>gateway</strong>, como es costumbre en el diseño de redes.</p>
+
+  <hr>
+
+  <p>De esta manera, se asegura que la red local tiene tanto direcciones <strong>globales</strong> como <strong>link-local</strong> asignadas correctamente, y el <strong>gateway</strong> se encuentra en la última dirección del rango, facilitando la conexión de los dispositivos.</p>
+
+</details>
+
+<hr>
+
+<details>
+<summary><strong>Actividad propuesta 0.5</strong></summary>
+  <div class="note">
     
     Otro elemento muy importante dentro del sistema de direccionamiento en un entorno informático es el número de puerto o puerto de acceso al servicio. Reflexiona y responde: ¿existe alguna relación entre los puertos de acceso y los servicios que puede ofrecer un equipo servidor?
+</details>
+<br>
 
+<details>
 
 !!! check "Resolución de la Actividad propuesta 0.5"
-
+<summary><strong>Resolución de la Actividad propuesta 0.5</strong></summary>
     Los **puertos** son números que identifican servicios específicos en un servidor o dispositivo de red. Un equipo servidor puede ofrecer múltiples servicios a través de diferentes puertos, lo que permite que un mismo dispositivo maneje varias conexiones simultáneas para distintos servicios.
 
     ### Relación entre puertos y servicios:
@@ -460,6 +571,8 @@ A continuación, se detallan los parámetros básicos de configuración:
 2. **Máscara de red**: Se trata de una serie de 32 bits que define qué parte de la dirección IP corresponde a la red y qué parte identifica los dispositivos dentro de esa red. Un ejemplo de máscara de red sería: **255.255.0.0**.
 3. **Puerta de enlace o gateway**: Es el dispositivo que permite que los paquetes de datos puedan salir o entrar en una red, normalmente a través de Internet. Se asigna una dirección IP a este dispositivo, como por ejemplo: **172.16.0.254**.
 4. **Servidor DNS**: Este servicio traduce los nombres de dominio que utilizamos diariamente (como www.ejemplo.com) a direcciones IP que las máquinas pueden entender. Un servidor DNS común es: **8.8.8.8**.
+
+</details>
 
 !!! info "Recuerda"
     
