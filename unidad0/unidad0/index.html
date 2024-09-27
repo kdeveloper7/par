@@ -1843,13 +1843,16 @@ A continuación, se detallan los parámetros básicos de configuración:
 </table>
 <p>b) <strong>Identificación del número de subredes y el número de hosts</strong>:</p>
 <ul>
-<li><strong>Subredes</strong>: Se necesitan 5 subredes para las 5 zonas independientes. Esto requiere 3 bits, ya que 2³ = 8 &gt; 5.</li>
-<li><strong>Hosts</strong>: Cada subred debe alojar hasta 30 dispositivos, lo cual requiere 5 bits, ya que 2⁵ = 32 &gt; 30.</li>
+<li>
+<p><strong>Hosts</strong>: Cada subred debe alojar hasta 30 dispositivos, lo cual requiere 5 bits, ya que 2⁵ = 32 - 2 &gt;= 30.</p>
+</li>
+<li>
+<p><strong>Subredes</strong>: Se necesitan 5 subredes, por lo tanto se sumaría el salto de red hasta completar 5 subredes.</p>
+</li>
 </ul>
 <p><strong>Cálculo de los bits necesarios</strong>:</p>
 <ul>
-<li><strong>Subredes</strong>: Para dividir la red en 5 subredes necesitamos 3 bits, ya que 2³ = 8 &gt; 5.</li>
-<li><strong>Hosts</strong>: Para alojar hasta 30 hosts por subred, necesitamos 5 bits, ya que 2⁵ = 32 &gt; 30.</li>
+<li><strong>Hosts</strong>: Para alojar hasta 30 hosts por subred, necesitamos 5 bits, ya que 2⁵ = 32 - 2 &gt;= 30.</li>
 </ul>
 <p>La dirección IP en binario quedaría así, con la separación clara entre los bits de red, subred y host:</p>
 <p>IP en binario:</p>
@@ -1874,6 +1877,9 @@ A continuación, se detallan los parámetros básicos de configuración:
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Recordar que el salto de red es <strong>2⁵ = 32</strong></p>
+</div>
 <p>c) <strong>Creación de la tabla de subnetting</strong>:</p>
 <p>A continuación, se presenta la tabla de subnetting que contiene las subredes con sus respectivos rangos de hosts y direcciones de <strong>broadcast</strong>:</p>
 <table>
@@ -1938,6 +1944,9 @@ A continuación, se detallan los parámetros básicos de configuración:
 </table>
 </div>
 <hr />
+<div class="admonition note">
+<p class="admonition-title">La <strong>máscara de red /27 en formato CIDR</strong> es equivalente en decimal a la ip 255.255.255.11100000 = 255.255.255.224 </p>
+</div>
 <h3 id="actividad-propuesta-06"><strong>Actividad propuesta 0.6</strong></h3>
 <div class="admonition question">
 <p class="admonition-title">Actividad propuesta 0.6</p>
