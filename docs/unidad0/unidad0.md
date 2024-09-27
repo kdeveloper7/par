@@ -694,15 +694,20 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
 
     b) **Identificación del número de subredes y el número de hosts**:
 
-    - **Subredes**: Se necesitan 5 subredes para las 5 zonas independientes. Esto requiere 3 bits, ya que 2³ = 8 > 5.
-    - **Hosts**: Cada subred debe alojar hasta 30 dispositivos, lo cual requiere 5 bits, ya que 2⁵ = 32 > 30.
+    - **Hosts**: Cada subred debe alojar hasta 30 dispositivos, lo cual requiere 5 bits, ya que 2⁵ = 32 - 2 >= 30.
+
+    - **Subredes**: Se necesitan 5 subredes, por lo tanto se sumaría el salto de red hasta completar 5 subredes.
+    
 
     **Cálculo de los bits necesarios**:
 
-    - **Subredes**: Para dividir la red en 5 subredes necesitamos 3 bits, ya que 2³ = 8 > 5.
-    - **Hosts**: Para alojar hasta 30 hosts por subred, necesitamos 5 bits, ya que 2⁵ = 32 > 30.
+    - **Hosts**: Para alojar hasta 30 hosts por subred, necesitamos 5 bits, ya que 2⁵ = 32 - 2 >= 30.
 
     La dirección IP en binario quedaría así, con la separación clara entre los bits de red, subred y host:
+
+
+
+
 
     IP en binario:
 
@@ -710,6 +715,11 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
     |----------------------------|------------------------|------------------------|
     | 10111110.00011010.10001111. | **000**                | **00000**           |
     | **Parte de red**            | **Parte de subred**    | **Parte de host**      |
+
+
+    !!! note "Recordar que el salto de red es **2⁵ = 32**"
+
+
 
     c) **Creación de la tabla de subnetting**:
 
@@ -727,7 +737,7 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
     | 8  | 190.26.151.224/27        | 190.26.151.225 - 190.26.151.254           | 190.26.151.255              |
 
 ---
-
+!!! note "La **máscara de red /27 en formato CIDR** es equivalente en decimal a la ip 255.255.255.11100000 = 255.255.255.224 "
 
 
 
