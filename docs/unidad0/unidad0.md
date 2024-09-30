@@ -687,7 +687,7 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
 
     La dirección IP se divide en la parte de **red**, la parte de **subred** y la parte de **host**. El desglose en binario se ve de la siguiente manera:
 
-    | **Binario**                |   **Parte de host**         |
+    | **Parte de Red**                |   **Parte de host**         |
     |----------------------------|------------------------|
     | 10111110.00011010.10001111. |  **00000000**           |
   
@@ -737,7 +737,7 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
     | 8  | 190.26.151.224/27        | 190.26.151.225 - 190.26.151.254           | 190.26.151.255              |
 
 ---
-!!! note "La **máscara de red /27 en formato CIDR** es equivalente en decimal a la ip 255.255.255.11100000 = 255.255.255.224 "
+!!! note "La **máscara de red /27 en formato CIDR** es equivalente en decimal a la **ip 255.255.255.11100000 = 255.255.255.224** "
 
 
 
