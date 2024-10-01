@@ -749,7 +749,7 @@ Una vez generada la tabla, se puede proceder a la asignación de direcciones IP 
     
     Cada una de estas zonas debe soportar hasta **100 dispositivos** conectados simultáneamente.
     
-    **Crea el diseño de subnetting** que permita implementar esta estructura, utilizando el rango de direcciones IPv4 privadas **172.20.192.0/22**. Completa la tabla de subneteo con las subredes y sus respectivos rangos de direcciones IP.
+    **Crea el diseño de subnetting** que permita implementar esta estructura, utilizando el rango de direcciones IPv4 privadas **172.20.192.0/22**. Completa la tabla de subneteo con las subredes, sus respectivos rangos de direcciones IP y la máscara de red tanto en formato CIDR como en decimal.
 
 ---
 
