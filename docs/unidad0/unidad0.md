@@ -772,7 +772,9 @@ El programa **Cisco Networking Academy (CNA)** ofrece un entorno completo para e
 
 !!! info "Recurso web"
     
-    Puedes acceder a la plataforma de **Cisco Networking Academy**  accediendo directamente a su [sitio web oficial](https://www.netacad.com).
+    -Puedes acceder a la plataforma de **Cisco Networking Academy**  accediendo directamente a su [sitio web oficial](https://www.netacad.com).
+    
+    -Para realizar el curso elemental de iniciación consultar el enlace [Curso Introducción a Cisco Packet Tracer](https://www.netacad.com/es/courses/getting-started-cisco-packet-tracer?courseLang=es-XL)
 
 ---
 
